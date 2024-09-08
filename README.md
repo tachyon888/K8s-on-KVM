@@ -19,7 +19,7 @@ The ubuntu-24.04.1-desktop-amd64.iso image is used to install Ubuntu on the bare
 
 # 2. Configure Ubuntu
 ## Configure Networking
-Install bridge-utils package. It is a set of tools for creating and managing bridge devices.
+Install bridge-utils package. It is a set of tools for creating and managing bridge devices.\
 ``` $ sudo apt install -y bridge-utils ```
 <br />
 
