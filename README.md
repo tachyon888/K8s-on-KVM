@@ -40,7 +40,7 @@ network:
       dhcp4: false
       dhcp6: false
       addresses:
-        - 10.0.0.101/24
+        - 10.0.0.100/24
       routes:
         - to: default
           via: 10.0.0.1
