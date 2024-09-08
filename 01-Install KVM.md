@@ -129,7 +129,7 @@ Reboot the system:\
 <br />
 
 # 4. Create the virtual machines
-Use Virtual Machine Manager tool to deploy the VMs needed (3 x Debian VM):
+Use Virtual Machine Manager tool to deploy the VMs needed:
 <img width="1323" alt="image" src="https://github.com/user-attachments/assets/24328bb0-f82d-481c-9dd4-6f4c96369569">
 
 
