@@ -18,6 +18,11 @@ The ubuntu-24.04.1-desktop-amd64.iso image is used to install Ubuntu on the bare
 <br />
 
 # 2. Configure Ubuntu
+## Configure Networking
+Install bridge-utils package. It is a set of tools for creating and managing bridge devices.
+``` $ sudo apt install -y bridge-utils ```
+<br />
+
 ## Enable SSH
 Install OpenSSH Server:\
 ``` $ sudo apt install openssh-server ```
@@ -30,9 +35,6 @@ Install OpenSSH Server:\
 ![image](https://github.com/user-attachments/assets/517fdf96-b4c7-4df3-84bf-8621dbd4c700)
 <br />
 
-
-## Configure Networking
-<br />
 
 
 # 3. Install KVM
@@ -51,7 +53,7 @@ Check if virtualization is enabled:\
 <img width="208" alt="image" src="https://github.com/user-attachments/assets/109df41f-07b5-48cb-9852-0100563cb3ed">
 
 Install KVM packages:\
-``` $ sudo apt install -y qemu-kvm virt-manager libvirt-daemon-system virtinst libvirt-clients bridge-utils ```
+``` $ sudo apt install -y qemu-kvm virt-manager libvirt-daemon-system virtinst libvirt-clients ```
 <br />
 <br />
 
@@ -60,5 +62,5 @@ Install KVM packages:\
 - **libvirt-daemon-system:** A package that provides configuration files required to run the libvirt daemon.
 - **virtinst:** A  set of command-line utilities for provisioning and modifying virtual machines.
 - **libvirt-clients:** A set of client-side libraries and APIs for managing and controlling virtual machines & hypervisors from the command line.
-- **bridge-utils:** A set of tools for creating and managing bridge devices.
+
   
