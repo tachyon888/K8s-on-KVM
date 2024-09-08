@@ -21,13 +21,13 @@ vm0: 10.0.0.110/24 \
 vm1: 10.0.0.111/24 \
 vm2: 10.0.0.112/24
 
-``` $ sudo apt install vim ```
+``` # apt install vim ```
 ```
-$ sudo vi /etc/network/interfaces
+# vi /etc/network/interfaces
 auto enp1s0
 iface enp1s0 inet static
 address 10.0.0.110
 netmask 255.255.255.0
 gateway 10.0.0.1
 ```
-``` $ sudo systemctl restart networking ```
+``` # systemctl restart networking ```
