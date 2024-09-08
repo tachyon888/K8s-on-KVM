@@ -116,3 +116,6 @@ Add the current logged in user to kvm and libvirt groups:
 $ sudo usermod -aG kvm $USER
 $ sudo usermod -aG libvirt $USER
 ```
+
+Reboot the system:
+``` $ sudo reboot ```
