@@ -33,4 +33,8 @@ Check if virtualization is enabled:
 <br />
 <img width="360" alt="image" src="https://github.com/user-attachments/assets/e903e274-cbc1-4560-a475-ed9517d1993e">
 
+``` $ sudo apt install -y cpu-checker ```
+``` $ kvm-ok ```
+<br />
+<img width="208" alt="image" src="https://github.com/user-attachments/assets/109df41f-07b5-48cb-9852-0100563cb3ed">
 
