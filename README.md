@@ -1,8 +1,6 @@
 # Index
-1. Install Ubuntu on the baremetal machine
-2. Configure Ubuntu
-3. Install KVM packages
-4. Create virtual machines to install OpenStack
-5. Install OpenStack cluster
-<br />
+1. Install KVM on the baremetal machine
+2. Install OpenStack on the VMs created using KVM
+3. Install K8s on OpenStack 
+   
 
