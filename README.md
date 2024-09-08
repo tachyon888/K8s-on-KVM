@@ -19,7 +19,18 @@ The ubuntu-24.04.1-desktop-amd64.iso image is used to install Ubuntu on the bare
 
 # 2. Configure Ubuntu
 ## Enable SSH
+Install OpenSSH Server:\
+``` $ sudo apt install openssh-server ```
+<br />
+
 ## Enable Remote Login
+![image](https://github.com/user-attachments/assets/773e5e66-cfe2-40ee-8808-2c1e6efd8185)
+<br />
+
+![image](https://github.com/user-attachments/assets/517fdf96-b4c7-4df3-84bf-8621dbd4c700)
+<br />
+
+
 ## Configure Networking
 <br />
 
