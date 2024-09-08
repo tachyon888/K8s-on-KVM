@@ -19,9 +19,41 @@ The ubuntu-24.04.1-desktop-amd64.iso image is used to install Ubuntu on the bare
 
 # 2. Configure Ubuntu
 ## Configure Networking
-Install bridge-utils package. It is a set of tools for creating and managing bridge devices.\
+Install bridge-utils package. It is a set of tools for creating and managing bridge devices:\
 ``` $ sudo apt install -y bridge-utils ```
 <br />
+```
+$ sudo vi /etc/netplan/01-netcfg.yaml
+network:
+  version: 2
+  ethernets:
+    eno1:
+      renderer: NetworkManager
+      match: {}
+      addresses:
+      - "10.0.0.100/24"
+      nameservers:
+        addresses:
+        - 8.8.8.8
+          ipv6.method: "disabled"
+          ipv6.ip6-privacy: "-1"
+          proxy._: ""
+  bridges:
+    br0:
+      interfaces: [eno1]
+      dhcp4: false
+      addresses: [10.0.0.101/24]
+      macaddress: 08:00:27:4b:1d:45
+      routes:
+        - to: default
+          via: 10.0.0.1
+          metric: 100
+      nameservers:
+        addresses: [8.8.8.8]
+      parameters:
+        stp: false
+      dhcp6: false
+```
 
 ## Enable SSH
 Install OpenSSH Server:\
