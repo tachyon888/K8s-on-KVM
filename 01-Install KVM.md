@@ -1,8 +1,10 @@
-Index
-- 1. Install Ubuntu on the baremetal machine
-- 2. Configure Ubuntu
-- 3. Install KVM packages
-- 4. Create the virtual machines
+# Index
+1. Install Ubuntu on the baremetal machine
+2. Configure Ubuntu
+3. Install KVM packages
+4. Create the virtual machines
+<br />
+
 
 # 1. Install Ubuntu on the baremetal machine
 Baremetal machine specification:
@@ -14,12 +16,14 @@ Baremetal machine specification:
 The ubuntu-24.04.1-desktop-amd64.iso image is used to install Ubuntu on the baremetal machine.
 <br />
 <br />
+<br />
+
 
 # 2. Configure Ubuntu
-## Configure Networking
 Install vim:\
 ``` $ sudo apt install vim ```
 
+## 2.1. Networking
 Install bridge-utils package. It is a set of tools for creating and managing bridge devices:\
 ``` $ sudo apt install -y bridge-utils ```
 <br />
@@ -60,18 +64,20 @@ $ sudo netplan apply
 <img width="797" alt="image" src="https://github.com/user-attachments/assets/8d8def45-f487-4c84-a364-aec62a76a931">
 
 
-## Enable SSH
+## 2.2. Enable SSH
 Install OpenSSH Server:\
 ``` $ sudo apt install openssh-server ```
 <br />
 
-## Enable Remote Login
+
+## 2.3. Enable Remote Login
 ![image](https://github.com/user-attachments/assets/773e5e66-cfe2-40ee-8808-2c1e6efd8185)
 <br />
 
 ![image](https://github.com/user-attachments/assets/517fdf96-b4c7-4df3-84bf-8621dbd4c700)
 <br />
-
+<br />
+<br />
 
 
 # 3. Install KVM packages
