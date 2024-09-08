@@ -99,5 +99,20 @@ Install KVM packages:\
 - **libvirt-daemon-system:** A package that provides configuration files required to run the libvirt daemon.
 - **virtinst:** A  set of command-line utilities for provisioning and modifying virtual machines.
 - **libvirt-clients:** A set of client-side libraries and APIs for managing and controlling virtual machines & hypervisors from the command line.
+<br />
+<br />
 
-  
+Start and enable the daemon:\
+```
+$ sudo systemctl enable --now libvirtd
+$ sudo systemctl start libvirtd
+$ sudo systemctl status libvirtd
+```
+<br />
+<br />
+
+Add the current logged in user to kvm and libvirt groups:\
+```
+$ sudo usermod -aG kvm $USER
+$ sudo usermod -aG libvirt $USER
+```
