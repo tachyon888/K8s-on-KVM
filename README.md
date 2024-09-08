@@ -44,10 +44,10 @@ Install KVM packages:\
 <br />
 <br />
 
-- qemu-kvm: An opensource emulator and virtualization package that provides hardware emulation.
-- virt-manager: A Qt-based graphical interface for managing virtual machines via the libvirt daemon.
-- libvirt-daemon-system: A package that provides configuration files required to run the libvirt daemon.
-- virtinst: A  set of command-line utilities for provisioning and modifying virtual machines.
-- libvirt-clients: A set of client-side libraries and APIs for managing and controlling virtual machines & hypervisors from the command line.
-- bridge-utils: A set of tools for creating and managing bridge devices.
+- **qemu-kvm:** An opensource emulator and virtualization package that provides hardware emulation.
+- **virt-manager:** A Qt-based graphical interface for managing virtual machines via the libvirt daemon.
+- **libvirt-daemon-system:** A package that provides configuration files required to run the libvirt daemon.
+- **virtinst:** A  set of command-line utilities for provisioning and modifying virtual machines.
+- **libvirt-clients:** A set of client-side libraries and APIs for managing and controlling virtual machines & hypervisors from the command line.
+- **bridge-utils:** A set of tools for creating and managing bridge devices.
   
