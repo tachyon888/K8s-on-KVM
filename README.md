@@ -31,7 +31,6 @@ update Ubuntu:
 Check if virtualization is enabled:
 ``` $ egrep -c '(vmx|svm)' /proc/cpuinfo ```
 <br />
-<br />
 <img width="360" alt="image" src="https://github.com/user-attachments/assets/e903e274-cbc1-4560-a475-ed9517d1993e">
 
 
