@@ -117,5 +117,5 @@ $ sudo usermod -aG kvm $USER
 $ sudo usermod -aG libvirt $USER
 ```
 
-Reboot the system:
+Reboot the system:\
 ``` $ sudo reboot ```
