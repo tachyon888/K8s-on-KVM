@@ -39,3 +39,6 @@ Check if virtualization is enabled:\
 <br />
 <img width="208" alt="image" src="https://github.com/user-attachments/assets/109df41f-07b5-48cb-9852-0100563cb3ed">
 
+Install KVM packages:\
+``` $ sudo apt install -y qemu-kvm virt-manager libvirt-daemon-system virtinst libvirt-clients bridge-utils ```
+<br />
