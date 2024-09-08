@@ -18,6 +18,9 @@ The ubuntu-24.04.1-desktop-amd64.iso image is used to install Ubuntu on the bare
 <br />
 
 # 2. Configure Ubuntu
+## Install some utilities
+''' sudo apt install vim ```
+
 ## Configure Networking
 Install bridge-utils package. It is a set of tools for creating and managing bridge devices:\
 ``` $ sudo apt install -y bridge-utils ```
@@ -54,6 +57,8 @@ network:
         stp: false
       dhcp6: false
 ```
+<br />
+``` $ sudo netplan apply ```
 
 ## Enable SSH
 Install OpenSSH Server:\
