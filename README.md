@@ -1,9 +1,9 @@
 # Index
 1. Install Ubuntu on the baremetal machine
 2. Configure Ubuntu
-3. Install KVM
-4. Deploy Virtual Machines to install K8s cluster
-5. Install K8s
+3. Install KVM packages
+4. Create virtual machines to install OpenStack
+5. Install OpenStack cluster
 <br />
 
 # 1. Install Ubuntu on the baremetal machine
@@ -18,13 +18,15 @@ The ubuntu-24.04.1-desktop-amd64.iso image is used to install Ubuntu on the bare
 <br />
 
 # 2. Configure Ubuntu
-## Install some utilities
+## Configure Networking
+Install vim:\
 ``` $ sudo apt install vim ```
 
-## Configure Networking
 Install bridge-utils package. It is a set of tools for creating and managing bridge devices:\
 ``` $ sudo apt install -y bridge-utils ```
 <br />
+
+Add necessary networking configuration for netplan:
 ```
 $ sudo vi /etc/netplan/01-netcfg.yaml
 network:
@@ -74,7 +76,7 @@ Install OpenSSH Server:\
 
 
 
-# 3. Install KVM
+# 3. Install KVM packages
 update Ubuntu:\
 ``` $ sudo apt update ```   
 
@@ -122,7 +124,7 @@ Reboot the system:\
 <br />
 <br />
 
-# 4. Install the virtual machines
-Use Virtual Machine Manager tool to deploy the VMs needed for K8s (2 x Debian VM):
+# 4. Create the virtual machines to install OpenStack
+Use Virtual Machine Manager tool to deploy the VMs needed (3 x Debian VM):
 <img width="1323" alt="image" src="https://github.com/user-attachments/assets/24328bb0-f82d-481c-9dd4-6f4c96369569">
 
