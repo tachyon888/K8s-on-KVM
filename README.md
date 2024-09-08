@@ -55,6 +55,11 @@ $ sudo chmod 600 /etc/netplan/01-netcfg.yaml
 $ sudo netplan apply
 ```
 
+``` $ ip addr show ```
+<br />
+<img width="797" alt="image" src="https://github.com/user-attachments/assets/8d8def45-f487-4c84-a364-aec62a76a931">
+
+
 ## Enable SSH
 Install OpenSSH Server:\
 ``` $ sudo apt install openssh-server ```
