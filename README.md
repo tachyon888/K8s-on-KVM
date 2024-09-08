@@ -102,7 +102,7 @@ Install KVM packages:\
 <br />
 <br />
 
-Start and enable the daemon:\
+Start and enable the daemon:
 ```
 $ sudo systemctl enable --now libvirtd
 $ sudo systemctl start libvirtd
@@ -111,7 +111,7 @@ $ sudo systemctl status libvirtd
 <br />
 <br />
 
-Add the current logged in user to kvm and libvirt groups:\
+Add the current logged in user to kvm and libvirt groups:
 ```
 $ sudo usermod -aG kvm $USER
 $ sudo usermod -aG libvirt $USER
